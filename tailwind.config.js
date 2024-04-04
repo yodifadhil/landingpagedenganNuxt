@@ -1,14 +1,18 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-    "./app.vue",
-  ],
-  presets: [require("@privyid/tailwind-preset")],
-  // important: true,
-  theme: {},
-};
+  // tailwind.config.js
+  module.exports = {
+    purge: [
+      './components/**/*.{vue,js}',
+      './layouts/**/*.vue',
+      './pages/**/*.vue',
+      './plugins/**/*.{js,ts}',
+      './nuxt.config.{js,ts}',
+    ],
+     darkMode: false, // or 'media' or 'class'
+     theme: {
+       extend: {},
+     },
+     variants: {
+       extend: {},
+     },
+     plugins: [],
+   }
